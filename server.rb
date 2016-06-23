@@ -6,8 +6,8 @@ require "net/http"
 require "uri"
 
 # Our client ID and secret, used to get the access token
-CLIENT_ID = ENV['8cd837cd-a736-4b9f-a395-d326455c611a']
-CLIENT_SECRET = ENV['0e587288-bd88-43a6-83cf-9177a501ed5b']
+CLIENT_ID = ENV['0e587288-bd88-43a6-83cf-9177a501ed5b']
+CLIENT_SECRET = ENV['8cd837cd-a736-4b9f-a395-d326455c611a']
 
 # We'll store the access token in the session
 use Rack::Session::Pool, :cookie_only => false
