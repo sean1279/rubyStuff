@@ -14,7 +14,7 @@ use Rack::Session::Pool, :cookie_only => false
 
 # This is the URI that will be called with our access
 # code after we authenticate with our SmartThings account
-redirect_uri = 'http://localhost:4567/oauth/callback'
+redirect_uri = 'https://localhost:4567/oauth/callback'
 
 # This is the URI we will use to get the endpoints once we've received our token
 endpoints_uri = 'https://graph.api.smartthings.com/api/smartapps/endpoints'
