@@ -40,7 +40,8 @@ end
 
 # handle requests to /authorize URL
 get '/authorize' do
-    'Not Implemented!'
+url = client.auth_code.authorize_url(redirect_uri: redirect_uri, scope: 'app')
+  redirect url
 end
 
 # hanlde requests to /oauth/callback URL. We
